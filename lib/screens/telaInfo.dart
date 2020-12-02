@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:meditation_app/widgets/bottom_nav_bar.dart';
-import 'package:meditation_app/widgets/bottom_nav_bar_activity.dart';
 import 'package:meditation_app/widgets/search_bar.dart';
 
 class TelaInfo extends StatelessWidget {
@@ -11,7 +10,6 @@ class TelaInfo extends StatelessWidget {
     var size = MediaQuery.of(context)
         .size; //this gonna give us total height and with of our device
     return Scaffold(
-      bottomNavigationBar: BottomNavBarActivity(),
       body: Stack(
         children: <Widget>[
           Container(

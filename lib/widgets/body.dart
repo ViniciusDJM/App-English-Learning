@@ -30,11 +30,17 @@ class Body extends StatelessWidget {
               ),
               itemBuilder: (context, index) => RecipeBundelCard(
                 recipeBundle: recipeBundles[index],
+
                 press: (){
+                  if(recipeBundles[index].id == 1){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
                     return DetailsScreen();
-                  },),
-                  );
+                  },),);}
+                  else if(recipeBundles[index].id == 2){
+                    Navigator.push(context, MaterialPageRoute(builder: (context){
+                      return DetailsScreen2();
+                    },),);
+                  }
                 },
               ),
             ),

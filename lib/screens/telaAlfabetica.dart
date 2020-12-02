@@ -4,6 +4,8 @@ import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/widgets/bottom_nav_bar.dart';
 import 'package:meditation_app/widgets/category_card2.dart';
 import 'package:meditation_app/widgets/search_bar.dart';
+import 'package:meditation_app/screens/telaAtividade.dart';
+import 'package:meditation_app/screens/telaInfo.dart';
 
 class DetailsScreen extends StatelessWidget {
   @override
@@ -59,81 +61,177 @@ class DetailsScreen extends StatelessWidget {
                       children: <Widget>[
                         CategoryCard2(
                           title: "A",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),
                         CategoryCard2(
                           title: "B",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),
                         CategoryCard2(
                           title: "C",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),
                         CategoryCard2(
                           title: "D",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),
                         CategoryCard2(
                           title: "E",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "F",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "G",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "H",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "I",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "J",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "K",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "L",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "M",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "N",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "O",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "P",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "Q",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "R",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "S",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "T",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),
                         CategoryCard2(
                           title: "U",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "W",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "Y",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),CategoryCard2(
                           title: "Z",
-                          press: () {},
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaAtividade();
+                            },),);
+                          },
                         ),
                       ],
                     ),
@@ -147,6 +245,223 @@ class DetailsScreen extends StatelessWidget {
     );
   }
 }
+
+class DetailsScreen2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    return Scaffold(
+      bottomNavigationBar: BottomNavBar(),
+      body: Stack(
+        children: <Widget>[
+          Container(
+            height: size.height * .30,
+            decoration: BoxDecoration(
+              color: kBlueLightColor,
+              //image: DecorationImage(
+              //image: AssetImage("assets/images/meditation_bg.png"),
+              //fit: BoxFit.fitWidth,
+              //),
+            ),
+          ),
+          SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Container(
+                      alignment: Alignment.center,
+                      height: 60,
+                      width: 60,
+                      decoration: BoxDecoration(
+                        color: Color(0xFF80CBC4),
+                        shape: BoxShape.circle,
+                      ),
+                      child: SvgPicture.asset("assets/icons/menu.svg"),
+                    ),
+                  ),
+                  Text(
+                    "Escolha uma letra \ne comece a praticar!\n",
+                    style: Theme.of(context)
+                        .textTheme
+                        .display1
+                        .copyWith(fontWeight: FontWeight.w900),
+                  ),
+                  //SearchBar(),
+                  Expanded(
+                    child: GridView.count(
+                      crossAxisCount: 5,
+                      childAspectRatio: .85,
+                      crossAxisSpacing: 20,
+                      mainAxisSpacing: 20,
+                      children: <Widget>[
+                        CategoryCard2(
+                          title: "A",
+                          press: () {
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return TelaInfo();
+                            },),);
+                          },
+                        ),
+                        CategoryCard2(
+                          title: "B",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),
+                        CategoryCard2(
+                          title: "C",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),
+                        CategoryCard2(
+                          title: "D",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),
+                        CategoryCard2(
+                          title: "E",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "F",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "G",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "H",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "I",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "J",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "K",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "L",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "M",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "N",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "O",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "P",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "Q",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "R",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "S",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "T",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),
+                        CategoryCard2(
+                          title: "U",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "V",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "Y",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),CategoryCard2(
+                          title: "Z",
+                          press: () {  Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return TelaInfo();
+                          },),);
+                          },
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
 
 class SeassionCard extends StatelessWidget {
   final int seassionNum;

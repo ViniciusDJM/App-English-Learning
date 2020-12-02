@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:meditation_app/widgets/bottom_nav_bar.dart';
-import 'package:meditation_app/widgets/bottom_nav_bar_activity.dart';
-import 'package:meditation_app/widgets/search_bar.dart';
 
 class TelaAtividade extends StatelessWidget {
   @override
@@ -10,7 +7,6 @@ class TelaAtividade extends StatelessWidget {
     var size = MediaQuery.of(context)
         .size; //this gonna give us total height and with of our device
     return Scaffold(
-      bottomNavigationBar: BottomNavBarActivity(),
       body: Stack(
         children: <Widget>[
           Container(
@@ -72,8 +68,6 @@ class TelaAtividade extends StatelessWidget {
                         SizedBox(
                           height: 50.0,
                         ),
-                        SearchBar(Icon(Icons.create),"Past"),
-                        SearchBar(Icon(Icons.create),"Past Participle")
                       ],
                     )
                   ),
