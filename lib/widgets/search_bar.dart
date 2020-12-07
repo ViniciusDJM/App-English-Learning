@@ -2,25 +2,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SearchBar extends StatelessWidget {
-  const SearchBar({
+  final Icon icon;
+  final String text;
+  final TextEditingController controller;
+
+  const SearchBar(this.icon,this.text, this.controller,{
     Key key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 30),
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+      margin: EdgeInsets.symmetric(vertical: 5),
+      padding: EdgeInsets.symmetric(horizontal: 5, vertical: 5),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(29.5),
       ),
       child: TextField(
         decoration: InputDecoration(
-          hintText: "Busque por uma letra...",
-          icon: SvgPicture.asset("assets/icons/search.svg"),
-          border: InputBorder.none,
+          hintText: text,
+          icon: icon,
         ),
+        controller: controller,
       ),
     );
   }
