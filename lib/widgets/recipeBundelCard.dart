@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_app/model/RecipeBundel.dart';
 
 import 'package:meditation_app/size_config.dart';
@@ -22,12 +21,11 @@ class RecipeBundelCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(defaultSize * 1.8), //18
         ),
         child: Row(
-
           children: <Widget>[
             Expanded(
               child: Padding(
                 padding: EdgeInsets.all(defaultSize * 1), //20
-                child: Column(
+                child: Column( //colocar dois botoes e retirar os textos da atividade
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Spacer(),

@@ -4,7 +4,6 @@ import 'package:meditation_app/back/apiActivities.dart';
 import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/widgets/bottom_nav_bar.dart';
 import 'package:meditation_app/widgets/category_card2.dart';
-import 'package:meditation_app/widgets/search_bar.dart';
 import 'package:meditation_app/screens/telaAtividade.dart';
 import 'package:meditation_app/screens/telaInfo.dart';
 import 'package:scoped_model/scoped_model.dart';

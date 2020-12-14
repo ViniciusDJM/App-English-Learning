@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/model/RecipeBundel.dart';
 import 'package:meditation_app/size_config.dart';
 import 'package:meditation_app/widgets/categories.dart';
@@ -30,8 +28,8 @@ class Body extends StatelessWidget {
               ),
               itemBuilder: (context, index) => RecipeBundelCard(
                 recipeBundle: recipeBundles[index],
-
                 press: (){
+                  //switch
                   if(recipeBundles[index].id == 1){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
                     return DetailsScreen();

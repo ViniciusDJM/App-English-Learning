@@ -9,7 +9,7 @@ class HomeScreen extends StatelessWidget {
     SizeConfig().init(context);
     return Scaffold(
       appBar: buildAppBar(),
-      body: Body(),
+      body: Body(), // Class Home
       // We are not able to BottomNavigationBar because the icon parameter dont except SVG
       // We also use Provied to manage the state of our Nav
     );

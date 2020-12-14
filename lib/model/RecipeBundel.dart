@@ -35,7 +35,6 @@ List<RecipeBundle> recipeBundles = [
     imageSrc: "assets/images/teste6.png",
     color: Color(0xFF90AF17),
   ),
-
   RecipeBundle(
     id: 3,
     chefs: 4,
