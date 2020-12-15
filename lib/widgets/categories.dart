@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-
 import 'package:meditation_app/constants.dart';
 import 'package:meditation_app/size_config.dart';
 
-// Our Category List need StateFullWidget
-// I can use Provider on it, Then we dont need StatefulWidget
-
+// Classe que usamos para utilizar a barra de categoria
 class Categories extends StatefulWidget {
   @override
   _CategoriesState createState() => _CategoriesState();

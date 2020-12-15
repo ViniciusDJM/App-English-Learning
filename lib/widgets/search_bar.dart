@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-class SearchBar extends StatelessWidget {
+class SearchBar extends StatelessWidget { // com pouca utilidade, talvez seja bom excluir ela.
   final Icon icon;
   final String text;
   final TextEditingController controller;

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_app/constants.dart';
 
-class CategoryCard2 extends StatelessWidget {
+class CardLetras extends StatelessWidget { // Onde está o tamanho dos cards e sua cor, provavelmente tu vai editar aqui
   final String svgSrc;
   final String title;
   final Function press;
-  const CategoryCard2({
+  const CardLetras({
     Key key,
     this.svgSrc,
     this.title,

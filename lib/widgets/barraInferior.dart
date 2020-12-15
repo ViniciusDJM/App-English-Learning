@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:meditation_app/constants.dart';
 
-class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({
+class BarraInferior extends StatelessWidget { // Barra inferior, modelo antigo, talveez seja descartado para deixar o codigo no mesmo padrão
+  const BarraInferior({
     Key key,
   }) : super(key: key);
 

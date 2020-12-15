@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:meditation_app/model/RecipeBundel.dart';
+import 'package:meditation_app/model/cardMenu.dart';
 import 'package:meditation_app/size_config.dart';
 import 'package:meditation_app/widgets/categories.dart';
 import 'package:meditation_app/screens/telaAlfabetica.dart';
 
-import 'package:meditation_app/widgets/recipeBundelCard.dart';
+import 'package:meditation_app/widgets/cardMenu.dart';
 
-class Body extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  SafeArea(
@@ -26,17 +26,17 @@ class Body extends StatelessWidget {
                 SizeConfig.orientation == Orientation.landscape ? SizeConfig.defaultSize * 2 : 0,
                 childAspectRatio: 1.65,
               ),
-              itemBuilder: (context, index) => RecipeBundelCard(
-                recipeBundle: recipeBundles[index],
+              itemBuilder: (context, index) => CardMenu(
+                cardMenu: recipeBundles[index], // lista com os cards
                 press: (){
                   //switch
                   if(recipeBundles[index].id == 1){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return DetailsScreen();
+                    return TelaAlfabetica(); //DetailsScreen que leva para a tela das letras.
                   },),);}
                   else if(recipeBundles[index].id == 2){
                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return DetailsScreen2();
+                      return TelaAlfabetica(); // Retirei o DetailsScreen 2 pois era irrelevante ao que tu tava fazendo
                     },),);
                   }
                 },

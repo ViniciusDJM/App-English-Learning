@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:meditation_app/model/RecipeBundel.dart';
+import 'package:meditation_app/model/cardMenu.dart';
 
 import 'package:meditation_app/size_config.dart';
 
-class RecipeBundelCard extends StatelessWidget {
-  final RecipeBundle recipeBundle;
+class CardMenu extends StatelessWidget {
+  final RecipeBundle cardMenu;
   final Function press;
 
-  const RecipeBundelCard({Key key, this.recipeBundle, this.press})
+  const CardMenu({Key key, this.cardMenu, this.press})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class RecipeBundelCard extends StatelessWidget {
       onTap: press,
       child: Container(
         decoration: BoxDecoration(
-          color: recipeBundle.color,
+          color: cardMenu.color,
           borderRadius: BorderRadius.circular(defaultSize * 1.8), //18
         ),
         child: Row(
@@ -30,7 +30,7 @@ class RecipeBundelCard extends StatelessWidget {
                   children: <Widget>[
                     Spacer(),
                     Text(
-                      recipeBundle.title,
+                      cardMenu.title,
                       style: TextStyle(
                           fontSize: defaultSize * 2.0, //22
                           color: Colors.white),
@@ -39,7 +39,7 @@ class RecipeBundelCard extends StatelessWidget {
                     ),
                     SizedBox(height: defaultSize * 0.5,), // 5
                     Text(
-                      recipeBundle.description,
+                      cardMenu.description,
                       style: TextStyle(color: Colors.white54),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
@@ -47,12 +47,12 @@ class RecipeBundelCard extends StatelessWidget {
                     Spacer(),
                     buildInfoRow(
                       defaultSize * 0.2,
-                      text: "${recipeBundle.recipes} Atv Completas",
+                      text: "${cardMenu.faltantes} Atv Completas",
                     ),
                     SizedBox(height: defaultSize * 0.2), //5
                     buildInfoRow(
                       defaultSize,
-                      text: "${recipeBundle.chefs} Atv Restantes",
+                      text: "${cardMenu.feitos} Atv Restantes",
                     ),
                     Spacer(),
                   ],
@@ -63,7 +63,7 @@ class RecipeBundelCard extends StatelessWidget {
             AspectRatio(
               aspectRatio: 0.71,
               child: Image.asset(
-                recipeBundle.imageSrc,
+                cardMenu.imageSrc,
                 fit: BoxFit.cover,
                 alignment: Alignment.centerLeft,
               ),
