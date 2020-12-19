@@ -32,11 +32,11 @@ class Home extends StatelessWidget {
                   //switch
                   if(recipeBundles[index].id == 1){
                   Navigator.push(context, MaterialPageRoute(builder: (context){
-                    return TelaAlfabetica(); //DetailsScreen que leva para a tela das letras.
+                    return TelaAlfabetica("verb"); //DetailsScreen que leva para a tela das letras.
                   },),);}
                   else if(recipeBundles[index].id == 2){
                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return TelaAlfabetica(); // Retirei o DetailsScreen 2 pois era irrelevante ao que tu tava fazendo
+                      return TelaAlfabetica("noun"); // Retirei o DetailsScreen 2 pois era irrelevante ao que tu tava fazendo
                     },),);
                   }
                 },

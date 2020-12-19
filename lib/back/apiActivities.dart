@@ -4,20 +4,22 @@ import 'dart:convert';
 
 class ApiActivities extends Model{
 
-  final String _url;
+  String url;
   int index;
   List words = [];
 
-  ApiActivities(this._url,this.index);
+  ApiActivities(this.url,this.index);
 
   Future<List> getList() async{
-    Map data = await _getData();
-    words = data['words'];
+    if(words.isEmpty){
+      Map<String,dynamic> received = await _getData();
+      words = received["words"];
+    }
     return words;
   }
 
   Future<Map> _getData() async {
-    http.Response response = await http.get(_url);
+    http.Response response = await http.get(url);
     return json.decode(response.body);
   }
 

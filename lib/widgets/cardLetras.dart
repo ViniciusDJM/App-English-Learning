@@ -2,14 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:meditation_app/constants.dart';
 
 class CardLetras extends StatelessWidget { // Onde está o tamanho dos cards e sua cor, provavelmente tu vai editar aqui
+
   final String svgSrc;
   final String title;
   final Function press;
+  final bool active;
+
   const CardLetras({
     Key key,
     this.svgSrc,
     this.title,
     this.press,
+    this.active
   }) : super(key: key);
 
   @override
@@ -19,7 +23,7 @@ class CardLetras extends StatelessWidget { // Onde está o tamanho dos cards e s
       child: Container(
         // padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: active ? Colors.redAccent : Colors.white,
           borderRadius: BorderRadius.circular(13),
           boxShadow: [
             BoxShadow(
@@ -45,7 +49,10 @@ class CardLetras extends StatelessWidget { // Onde está o tamanho dos cards e s
                     style: Theme.of(context)
                         .textTheme
                         .title
-                        .copyWith(fontSize: 35),
+                        .copyWith(
+                          fontSize: 35,
+                          color: active ? Colors.white : Colors.black54
+                        ),
                   )
                 ],
               ),
